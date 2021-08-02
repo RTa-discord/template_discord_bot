@@ -34,4 +34,4 @@ jobs:
         git config --local user.name "RTa-technology"
         git add .
         git commit -m "Coverage"
-        git push
+        git push origin master
