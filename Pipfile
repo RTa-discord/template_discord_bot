@@ -12,6 +12,7 @@ python-dotenv = "==0.18.0"
 pytest = "*"
 dpytest = "*"
 pytest-cov = "*"
+"discord.py" = "*"
 
 [dev-packages]
 
