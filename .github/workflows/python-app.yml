@@ -26,7 +26,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pipenv run pytest -v --cov=CODE_DIRECTORY --cov-report=html
+        pipenv run pytest -v --cov-report=html
 
     - name: Commit files
       run: |
