@@ -28,15 +28,6 @@ jobs:
       run: |
         pipenv run pytest -v --cov=./ --cov-report=html
 
-    - name: Commit files
-      run: |
-        dir
-        git config --local user.email "scpfoundationidcardmaker@gmail.com"
-        git config --local user.name "RTa-technology"
-        git add .
-        git commit -m "Coverage"
-        git push origin master
-
     - name: Upload math result for job 2
       uses: actions/upload-artifact@v2
       with:
