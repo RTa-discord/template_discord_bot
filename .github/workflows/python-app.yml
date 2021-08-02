@@ -37,13 +37,8 @@ jobs:
         git commit -m "Coverage"
         git push origin master
 
-    - name: Zip output
-      run: |
-        cd htmlcov
-        zip release *.*
-
     - name: Upload math result for job 2
       uses: actions/upload-artifact@v2
       with:
         name: htmlcov
-        path: htmlcov.zip
+        path: htmlcov
