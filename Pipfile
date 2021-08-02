@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "==2.25.1"
+pytz = "==2021.1"
+dataclasses = "*"
+discord = "==1.7.3"
+python-dotenv = "==0.18.0"
+pytest = "*"
+dpytest = "*"
+pytest-cov = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
