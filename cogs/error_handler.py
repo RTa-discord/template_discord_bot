@@ -72,8 +72,8 @@ class CommandErrorHandler(commands.Cog):
             error_content = f'error content: {error}\nmessage_content: {ctx.message.content}\nmessage_author : {ctx.message.author}\n{ctx.message.jump_url}'
 
             logging.error(error_content, exc_info=True)
-            server = self.bot.get_guild(747714295382540305)
-            ch = 833070882133508186
+            server = self.bot.get_guild(874869947740868660)
+            ch = 874871515097739284
             embed = discord.Embed(title="エラー情報", description="", color=0xf00)
             embed.add_field(name="サーバー名", value=ctx.guild.name, inline=False)
             embed.add_field(name="サーバーID", value=ctx.guild.id, inline=False)
