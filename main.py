@@ -4,8 +4,9 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import traceback
 import os
+from discord_slash import SlashCommand
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.members = True
 
 class MyBot(commands.Bot):
@@ -41,6 +42,7 @@ if __name__ == '__main__':
     currentpath = os.path.dirname(os.path.abspath(__file__))
 
     bot = MyBot(command_prefix=commands.when_mentioned_or('/'))
+    slash = SlashCommand(bot, override_type = True)
     with open(currentpath + "/data/specific_setting.json", encoding='utf-8') as f:
         json_data = json.load(f)
     bot.run(token)
